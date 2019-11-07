@@ -1,0 +1,515 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, dl, dt, dd {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family:'Microsoft YaHei', Heiti SC, PingFangSC-Regular, sans-serif, arial;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, dl, dt, dd, div, span, b, strong, i, em, p {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ // -webkit-user-select: none;
+}
+label{
+  font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+h5{
+  font-size: 12px;
+}
+h1 {
+  font-size: 30px;
+}
+ul {
+  list-style: none;
+}
+.fr{
+  float: right;
+}
+.fl{
+  float: left
+}
+body,html{
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex: 1
+}
+#app{
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex: 1
+}
+.gray{
+  color: #ccc;
+  font-style: normal;
+  font-weight: normal;
+}
+.none{
+  display: none!important
+}
+.textalignleft{
+  text-align: left
+}
+.textalign{
+  text-align:center;
+}
+.widthimgbox{
+  text-align: center;
+}
+.ivu-icon-help-circled{
+  display: none
+}
+.widthimg{
+  max-width: 100%
+}
+.maxwidth36{
+  max-width: 36px;
+}
+.allm20{
+  margin: 20px!important
+}
+.w250{
+  width: 250px;
+}
+.w280{
+  width: 280px
+}
+.m10{
+  margin: 10px;
+}
+.m20{
+  margin: 20px;
+}
+.mt15{
+  margin-top: 15px;
+}
+.mt5{
+  margin-top: 5px;
+}
+.mt10{
+  margin-top: 10px;
+}
+.ml10{
+  margin-left: 10px;
+}
+.mr10{
+  margin-right: 10px
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.mt20{
+  margin-top: 30px;
+}
+.mr50{
+  margin-right: 50px;
+}
+.ml80{
+  margin-left: 80px
+}
+.ml120{
+  margin-left: 120px
+}
+.pr10{padding-right: 10px}
+.pl10{padding-left: 10px}
+.f20{
+  font-size: 20px;
+}
+.f24{
+  font-size: 24px;
+}
+.bai100{
+    width: 100%
+}
+.layout{
+  height: 100vh;
+  width: 100vw;
+  display:flex;
+  flex: 1
+}
+
+/* .ivu-input-large{
+  padding: 6px 11px;
+  height: 40px;
+  font-size: 16px;
+} */
+
+
+/******
+ 搜索查询条件的样式
+********/
+.search-header{
+   display: block;
+   overflow: hidden;
+   margin-bottom: 20px
+}
+ .search-header .search-hd{
+   float: left;
+   width: 100%;
+   margin-bottom: 10px
+ }
+ .search-header .search-hd ul li{
+   float: left;
+   margin-right: 10px;
+ }
+ .search-header .search-hd ul li label{
+    font-size: 14px;
+    max-width: 70px;
+    float: left;
+    vertical-align: middle;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+ }
+ .search-header .search-bd{
+   float: left;
+   width: 100%
+ }
+
+/*******
+  按钮样式颜色
+********/
+.ivu-btn-primary{
+   background: #409EFF;
+   border-color: #409EFF;
+}
+
+.ivu-btn-primary:hover{
+   background: #66b1ff;
+   border-color: #66b1ff;
+}
+
+
+.ivu-btn-success{
+    color: #fff;
+    background-color: #00b5ab;
+    border-color: #00b5ab;
+}
+
+.ivu-btn-success:hover{
+    color: #fff;
+    background-color: #00b5ab;
+    border-color: #00b5ab;
+}
+
+.ivu-menu-submenu{
+  text-align: left
+}
+
+.viewForm .ivu-form-item{
+  margin-bottom: 0px;
+}
+
+/****详情的布局*****/
+.zdviewbox{
+    float:left;
+    width: 100%;
+}
+.zdviewbox ul li{
+  float:left;
+  width: 100%;
+}
+.zdviewbox ul li label{
+  float: left;
+  width: 80px;
+}
+/*****动画******/
+.fold-enter-active {
+  animation-name: fold-in;
+  animation-duration: .5s;
+}
+.fold-leave-active {
+  animation-name: fold-out;
+  animation-duration: .5s;
+}
+@keyframes fold-in {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  50% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fold-out {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+.h20{
+ display: block;
+ height: 20px;
+ width: 100%;
+ overflow: hidden;
+}
+
+/****面包屑******/
+.ivu-breadcrumb>span:last-child{
+  font-weight: normal;
+}
+/*****页面详情*****/
+.page-component-view{
+  margin: 5px;
+  background: #fff;
+  position:relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.page-component-bd{
+  padding: 10px;
+  min-height:100vh
+}
+
+/****操作按钮****/
+.tableListOperator{
+  text-align: left;
+}
+.tableListOperator .ivu-btn{
+  margin-bottom: 10px;
+}
+
+.ivu-btn{
+  /* margin-bottom: 10px; */
+}
+
+/*****弹框详情******/
+.detail-comfir-box{
+
+}
+
+/******加一条横线*****/
+.page-divider {
+    font-family: "Monospaced Number","Chinese Quote",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.65);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #e8e8e8;
+}
+.page-divider-horizontal {
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 24px 0;
+  clear: both;
+}
+.page-divider-vertical {
+  margin: 0 8px;
+  display: inline-block;
+  height: .9em;
+  width: 1px;
+  vertical-align: middle;
+  position: relative;
+  top: -.06em;
+}
+
+/*****详情页面布局*******/
+.pageHeader{
+  text-align: left;
+  background: #fff;
+  padding: 0 32px;
+  border-bottom: 1px solid #e8e8e8;
+  /* margin-bottom: 16px; */
+}
+.pageBread{
+  padding: 10px 0
+}
+.page-detail{
+
+}
+.page-detail H2{
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(0,0,0,.85);
+  margin-bottom: 16px
+}
+
+.page-view{
+    font-family: "Monospaced Number","Chinese Quote",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(0,0,0,.65);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: #fff;
+    border-radius: 2px;
+    position: relative;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.page-view-body{
+    padding: 24px 32px;
+    display: block;
+    overflow: hidden;
+    min-height: 70vh
+}
+
+.pagelist{
+  text-align: left
+}
+.pagelist .pagelist-hd{
+  font-weight: 600;
+  font-size:16px;
+  margin-bottom: 16px;
+}
+.pagelist .pagelist-bd{
+  padding-left: 15px;
+}
+.pagelist .pagelist-item-tilte{
+    line-height: 20px;
+    padding-bottom: 16px;
+    margin-right: 8px;
+    color: rgba(0,0,0,.85);
+    white-space: nowrap;
+    display: table-cell;
+    color: rgba(0,0,0,.85);
+}
+.pagelist .pagelist-item-info{
+  line-height: 22px;
+  width: 100%;
+  padding-bottom: 16px;
+  color: rgba(0,0,0,.65);
+  display: table-cell;
+}
+
+.textleft{
+  text-align: left
+}
+
+.pageimgbox{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    margin-right: 4px;
+}
+
+.pageimgbox img{
+    width: 100%;
+    height: 100%
+}
+
+
+/*****卡片的样式****/
+.zd_cardorder{
+  border: #ddd 1px solid
+}
+.zd_cardbody{
+}
+.zd_cardbody .card_hd{
+  display: flex;
+  flex-direction: row;;
+  justify-content:space-between;
+  color: #999;
+  padding: 10px;
+}
+.zd_cardbody .card_bd{
+  padding: 10px;
+}
+.zd_cardbody .card_foot{
+   border-top:#ddd 1px solid;
+   flex-direction: row;
+   justify-content:space-between;
+   display:flex;
+}
+.zd_cardbody .card_foot div{
+  text-align: center;
+  border-right: #ddd 1px solid;
+  height: 46px;
+  line-height: 46px;
+  background: #f8f8f8;
+  flex:1
+}
+.zd_cardbody .card_foot div:last-child{
+  border-right:none
+}
+.online{
+  color: #61af88
+}
+.textleft{
+  text-align: left
+}
+.pointer{
+  cursor: pointer;
+}
+.ivu-message{
+  z-index: 100000!important
+}
+
+.p20{
+  padding: 20px
+}
+.mr20{
+  margin-right: 20px;
+}
+.ivu-table-cell{
+  padding: 0 10px!important
+}
+
+.Toolbar90{
+  margin-left: -90px
+}
+.Toolbar70{
+  margin-left: -70px
+}
+.Toolbar60{
+  margin-left: -60px
+}
+
+/* .v-transfer-dom .ivu-modal-mask{
+   z-index: 3000!important
+}
+
+.v-transfer-dom .ivu-modal-wrap{
+   z-index: 3000!important
+} */
+
+
+/* .h5sharepage .amap-layers canvas{
+  transform:none!important;
+  top:0!important;
+  left:0!important
+} */
+
+.ivu-tooltip-inner-with-width{
+  word-break: break-all;
+}
+
+.inline-block{
+  display: inline-block;
+}
